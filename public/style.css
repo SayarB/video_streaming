@@ -1,0 +1,9 @@
+video{
+    width: min(80%,1500px);
+    margin: 10px auto;
+    display: block;
+}
+body
+{
+    width:100%;
+}
