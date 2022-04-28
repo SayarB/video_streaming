@@ -28,5 +28,9 @@ module.exports = {
       path: "../dhamaka/dhamaka.mkv",
       format: "mkv",
     },
+    batman: {
+      path: "../batman/batman.mp4",
+      format: "mp4",
+    },
   },
 };

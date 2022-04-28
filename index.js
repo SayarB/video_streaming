@@ -5,7 +5,7 @@ const movies = require("./moviePath").moviePath;
 require("dotenv").config();
 app.use(express.static("public"));
 app.listen(8000, () => {
-  console.log("listening on port 8000");
+  console.log("");
 });
 app.get("/", (req, res) => {
   console.log(req.hostname);
@@ -16,7 +16,7 @@ app.get("/video", (req, res) => {
   if (!range) {
     res.status(400).send("Requires Range Header");
   }
-  const videoObj = movies.conjuring3;
+  const videoObj = movies.batman;
   const videoPath = videoObj.path;
   const format = videoObj.format;
   const subs = videoObj.subtitleFile;
